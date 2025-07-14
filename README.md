@@ -33,26 +33,36 @@ The main goal of this dashboard is to help you:
 
 ### 3. Daily Macros
 ![Daily Macros](visualizations/daily_macros.png)
- **Insights:** Most days, my macros look balanced, but I see spikes in protein, carbs, and fat after cheat days or big meals. If I notice my fat intake is high for several days, I try to adjust my food choices. I aim for enough protein to support my activity level.
+- **Summary:** I use this chart to see how much protein, carbs, and fat I eat each day, and to make sure my macros are balanced for my goals.
+- **Insights:** Most days, my macros look balanced, but I see spikes in protein, carbs, and fat after cheat days or big meals. If I notice my fat intake is high for several days, I try to adjust my food choices. I aim for enough protein to support my activity level.
+
 
 ### 4. Daily Nutrients
 #### Cholesterol
 ![Daily Cholesterol](visualizations/daily_cholesterol_mg.png)
+- **Summary:** This chart lets me track my cholesterol intake over time.
+- **Insights:** Most days I'm under the recommended 300mg, but I see spikes that line up with cheat days or when I eat eggs or shellfish.
+
 #### Sodium
 ![Daily Sodium](visualizations/daily_sodium_mg.png)
+- **Summary:** This chart lets me see how much sodium I eat each day.
+- **Insights:** I often go over the 2300mg limit, especially after cheat days, processed foods, or restaurant meals. I know I should cut back to help my blood pressure.
 
 #### Sugar
-- **Insights:** My sugar intake is usually moderate, but it jumps after desserts or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
+![Daily Sugar](visualizations/daily_sugar_grams.png)
+- **Summary:** This chart helps me monitor my sugar intake.
+- **Insights:** My sugar intake is usually moderate, but it jumps after cheat days, desserts, or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
 
+#### Fiber
+![Daily Fiber](visualizations/daily_fiber_grams.png)
 - **Summary:** This chart tracks my fiber intake.
 - **Insights:** Some days I don't hit the 25g target, so I try to eat more whole grains, fruits, and veggies. More fiber helps my digestion and keeps me full.
 
-- **Insights:** I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. If I notice processed foods or sweets in the top 10, I try to eat them less often for better health.
 
-### 6. Top Foods by Grams
-![Top Foods by Grams](visualizations/top_foods_by_grams.png)
-- **Summary:** This chart highlights the foods I eat the most by total weight, which sometimes tells a different story than just frequency.
-- **Insights:** Foods like rice, lentils, and milk make up a big part of my diet. If I see that I'm eating a lot of one food, I check its nutrition to make sure it's helping me reach my goals. Lots of fruits and veggies is good, but if processed foods are high, I try to cut back.
+### 5. Top Foods
+![Top Foods](visualizations/top_foods.png)
+- **Summary:** This chart shows the foods I eat most often, and how much of each I actually consume.
+- **Insights:** I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. If I notice processed foods or sweets in the top 10, I try to eat them less often for better health.
 
 ## How to Use
 1. Place your MyFitnessPal diary PDFs in the `pdf/` folder.
