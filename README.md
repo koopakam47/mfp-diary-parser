@@ -25,44 +25,39 @@ The main goal of this dashboard is to help you:
 
 ### 1. Weight Over Time
 ![Weight Over Time](visualizations/weight_over_time.png)
- **Insights:** I notice that my weight fluctuates, especially during periods when I eat more calories or change my macro balance. Most spikes in weight seem to follow cheat days where I eat more than usual. If my weight trends up or down outside my goals, I review my food choices for those days. When my weight is stable and healthy, I know I'm managing my diet well.
+- I notice that my weight fluctuates, especially during periods when I eat more calories or change my macro balance. Most spikes in weight seem to follow cheat days where I eat more than usual. If my weight trends up or down outside my goals, I review my food choices for those days. When my weight is stable and healthy, I know I'm managing my diet well.
 
 ### 2. Daily Calorie Intake
 ![Daily Calorie Intake](visualizations/daily_calories.png)
- **Insights:** I see spikes in my calorie intake that usually line up with cheat days, weekends, or social events. When my calories are consistent and close to my goal, I feel best. If I notice long stretches of low calories, I check for signs of low energy. Too many high-calorie days can lead to weight gain, so I keep an eye on those.
+- I see spikes in my calorie intake that usually line up with cheat days, weekends, or social events. When my calories are consistent and close to my goal, I feel best. If I notice long stretches of low calories, I check for signs of low energy. Too many high-calorie days can lead to weight gain, so I keep an eye on those.
 
 ### 3. Daily Macros
 ![Daily Macros](visualizations/daily_macros.png)
-- **Summary:** I use this chart to see how much protein, carbs, and fat I eat each day, and to make sure my macros are balanced for my goals.
-- **Insights:** Most days, my macros look balanced, but I see spikes in protein, carbs, and fat after cheat days or big meals. If I notice my fat intake is high for several days, I try to adjust my food choices. I aim for enough protein to support my activity level.
+- Most days, my macros look balanced, but I see spikes in protein, carbs, and fat after cheat days or big meals. If I notice my fat intake is high for several days, I try to adjust my food choices. I aim for enough protein to support my activity level.
 
 
 ### 4. Daily Nutrients
 #### Cholesterol
 ![Daily Cholesterol](visualizations/daily_cholesterol_mg.png)
-- **Summary:** This chart lets me track my cholesterol intake over time.
-- **Insights:** Most days I'm under the recommended 300mg, but I see spikes that line up with cheat days or when I eat eggs or shellfish.
+- Most days I'm under the recommended 300mg, but I see spikes that line up with cheat days or when I eat eggs or shellfish.
 
 #### Sodium
 ![Daily Sodium](visualizations/daily_sodium_mg.png)
-- **Summary:** This chart lets me see how much sodium I eat each day.
-- **Insights:** I often go over the 2300mg limit, especially after cheat days, processed foods, or restaurant meals. I know I should cut back to help my blood pressure.
+
+- I often go over the 2300mg limit, especially after cheat days, processed foods, or restaurant meals. I know I should cut back to help my blood pressure.
 
 #### Sugar
 ![Daily Sugar](visualizations/daily_sugar_grams.png)
-- **Summary:** This chart helps me monitor my sugar intake.
-- **Insights:** My sugar intake is usually moderate, but it jumps after cheat days, desserts, or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
+- My sugar intake is usually moderate, but it jumps after cheat days, desserts, or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
 
 #### Fiber
 ![Daily Fiber](visualizations/daily_fiber_grams.png)
-- **Summary:** This chart tracks my fiber intake.
-- **Insights:** Some days I don't hit the 25g target, so I try to eat more whole grains, fruits, and veggies. More fiber helps my digestion and keeps me full.
+- Some days I don't hit the 25g target, so I try to eat more whole grains, fruits, and veggies. More fiber helps my digestion and keeps me full.
 
 
 ### 5. Top Foods
 ![Top Foods](visualizations/top_foods.png)
-- **Summary:** This chart shows the foods I eat most often, and how much of each I actually consume.
-- **Insights:** I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. If I notice processed foods or sweets in the top 10, I try to eat them less often for better health.
+- I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. If I notice processed foods or sweets in the top 10, I try to eat them less often for better health.
 
 ## How to Use
 1. Place your MyFitnessPal diary PDFs in the `pdf/` folder.
@@ -84,10 +79,10 @@ pip install pdfplumber pandas matplotlib
 - All file paths are modular and update automatically with folder changes.
 
 ## License
-MIT License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Author
-Your Name
+Andrew Kaminski
 
 ---
 
