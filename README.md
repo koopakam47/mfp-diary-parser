@@ -23,41 +23,40 @@ The main goal of this dashboard is to help you:
 
 ## Visualizations & Summaries
 
-### 1. Weight Over Time
+### 1. Weight Over Time vs. Calorie Intake
 ![Weight Over Time](visualizations/weight_over_time.png)
-- I notice that my weight fluctuates, especially during periods when I eat more calories or change my macro balance. Most spikes in weight seem to follow cheat days where I eat more than usual. If my weight trends up or down outside my goals, I review my food choices for those days. When my weight is stable and healthy, I know I'm managing my diet well.
+- Weight loss has been consistent over time and cheat days have had little to no impact on consistent weight gain. Moderate to aggresive increase in calorie intake drives weight gain, while aggresive dieting leads to psychological and physical burnout and causes unplanned cheat days.
 
 ### 2. Daily Calorie Intake
 ![Daily Calorie Intake](visualizations/daily_calories.png)
-- I see spikes in my calorie intake that usually line up with cheat days, weekends, or social events. When my calories are consistent and close to my goal, I feel best. If I notice long stretches of low calories, I check for signs of low energy. Too many high-calorie days can lead to weight gain, so I keep an eye on those.
+
 
 ### 3. Daily Macros
 ![Daily Macros](visualizations/daily_macros.png)
-- Most days, my macros look balanced, but I see spikes in protein, carbs, and fat after cheat days or big meals. If I notice my fat intake is high for several days, I try to adjust my food choices. I aim for enough protein to support my activity level.
+- Most spikes in macro intake are due to cheat days. Increased carb intake in July has lead to improved physical performance and feelings of satiety. I've faced difficulty in keeping my protein intake under 200 grams. Fats have been kept deliberately low to allow for more carb intake but I'm slowly increasing them to see how it effects physical performance.
 
 
 ### 4. Daily Nutrients
 #### Cholesterol
 ![Daily Cholesterol](visualizations/daily_cholesterol_mg.png)
-- Most days I'm under the recommended 300mg, but I see spikes that line up with cheat days or when I eat eggs or shellfish.
+- Overall my cholesterol intake is a bit high (over 300 mg), but spikes are driven by cheat days.
 
 #### Sodium
 ![Daily Sodium](visualizations/daily_sodium_mg.png)
 
-- I often go over the 2300mg limit, especially after cheat days, processed foods, or restaurant meals. I know I should cut back to help my blood pressure.
+- I often go over the 2300 mg recommendation, but I don't find this concerning as I rely on sodium as a source of electrolytes, and my blood pressure is in a very healthy range.
 
 #### Sugar
 ![Daily Sugar](visualizations/daily_sugar_grams.png)
-- My sugar intake is usually moderate, but it jumps after cheat days, desserts, or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
+- My sugar intake is usually moderate, but it jumps after cheat days, desserts, or lots of fruit.
 
 #### Fiber
 ![Daily Fiber](visualizations/daily_fiber_grams.png)
-- Some days I don't hit the 25g target, so I try to eat more whole grains, fruits, and veggies. More fiber helps my digestion and keeps me full.
-
+- Overall fiber intake is in a good spot.
 
 ### 5. Top Foods
 ![Top Foods](visualizations/top_foods.png)
-- I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. If I notice processed foods or sweets in the top 10, I try to eat them less often for better health.
+- I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. 
 
 ## How to Use
 1. Place your MyFitnessPal diary PDFs in the `pdf/` folder.
