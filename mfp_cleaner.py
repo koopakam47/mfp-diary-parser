@@ -5,7 +5,7 @@ import re
 
 print("🚀 Starting enhanced MyFitnessPal PDF cleanup with units and gram conversion...")
 
-folder_path = "/Users/andrewkaminski/Desktop/MFP Data"
+folder_path = "."
 pdf_files = [f for f in os.listdir(folder_path) if f.endswith(".pdf")]
 all_entries = []
 
@@ -46,7 +46,7 @@ def convert_amount_to_grams(amount_str):
 
 for filename in pdf_files:
     file_path = os.path.join(folder_path, filename)
-    print(f"📄 Processing: {filename}")
+    print(f"\U0001F4C4 Processing: {filename}")
     with pdfplumber.open(file_path) as pdf:
         current_date = ""
         for page in pdf.pages:
@@ -54,8 +54,37 @@ for filename in pdf_files:
             if not text:
                 continue
 
+
             lines = [line.strip() for line in text.split('\n') if line.strip()]
-            for line in lines:
+            merged_lines = []
+            i = 0
+            while i < len(lines):
+                line = lines[i]
+                # Section header or URL
+                if date_pattern.match(line) or any(x in line for x in ["MyFitnessPal", "Printable Diary", "FOODS", "TOTALS", "English"]):
+                    merged_lines.append(line)
+                    i += 1
+                    continue
+                # Try to detect 3-line food entry: food, macros, amount
+                if (i+2 < len(lines)
+                    and re.match(r".+", lines[i])
+                    and re.match(r"^\d+ \d+g \d+g \d+g", lines[i+1])
+                    and re.match(r".*(gram|ml|oz|cup|tablespoon|teaspoon|container|bar|can|piece|muffin|cookie|slice|tortilla|g)$", lines[i+2], re.IGNORECASE)):
+                    merged_lines.append(f"{lines[i]}, {lines[i+2]} {lines[i+1]}")
+                    i += 3
+                    continue
+                # Try to detect 2-line food entry: food, macros
+                if (i+1 < len(lines)
+                    and re.match(r".+", lines[i])
+                    and re.match(r"^\d+ \d+g \d+g \d+g", lines[i+1])):
+                    merged_lines.append(f"{lines[i]} {lines[i+1]}")
+                    i += 2
+                    continue
+                # Otherwise, just add the line
+                merged_lines.append(line)
+                i += 1
+
+            for line in merged_lines:
                 if date_pattern.match(line):
                     current_date = line
                     continue
@@ -75,6 +104,23 @@ for filename in pdf_files:
                         entry[field] = int(entry[field])
 
                     all_entries.append(entry)
+                else:
+                    # Try a looser fallback regex for lines that don't match
+                    fallback = re.match(r"^(?P<food>.+?),\s(?P<amount>[^,]+)\s(?P<calories>\d+)\s(?P<carbs>\d+)g\s(?P<fat>\d+)g\s(?P<protein>\d+)g", line)
+                    if fallback:
+                        entry = fallback.groupdict()
+                        entry["date"] = current_date
+                        entry["source_file"] = filename.replace(".pdf", "")
+                        entry["amount (g)"] = convert_amount_to_grams(entry["amount"])
+                        # Fill missing fields with None
+                        for field in ["cholest", "sodium", "sugar", "fiber"]:
+                            entry[field] = None
+                        for field in ["calories", "carbs", "fat", "protein"]:
+                            entry[field] = int(entry[field])
+                        all_entries.append(entry)
+                    else:
+                        # Log skipped line for review
+                        print(f"[SKIPPED] {filename}: '{line}'")
 
 # Create DataFrame and rename columns with units
 df = pd.DataFrame(all_entries)
@@ -98,6 +144,6 @@ df = df[[
 
 # Save to CSV
 output_path = os.path.join(folder_path, "mfp_cleaned_output.csv")
-df.to_csv(output_path, index=False)
+df.to_csv(f"data/{output_path}", index=False)
 
 print(f"✅ Cleaned CSV created with units and gram conversion: {output_path}")
