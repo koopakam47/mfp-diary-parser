@@ -1,7 +1,7 @@
 # MyFitnessPal Diary Parser & Nutrition Dashboard
 
 ## Overview
-This project is a comprehensive dashboard for tracking and analyzing your nutritional data over time. By parsing food diary PDFs exported from MyFitnessPal, merging with weight and fitness data, and visualizing key metrics, you can gain actionable insights into your dietary habits and identify potential nutritional deficiencies.
+This project is a comprehensive dashboard for tracking and analyzing my nutritional data from January 1, 2025 to July 14, 2025. During this period, I have meticulously tracked every single food I've consumed. By parsing food diary PDFs exported from MyFitnessPal, merging with weight and fitness data, and visualizing key metrics, I can gain actionable insights into my dietary habits and identify potential nutritional deficiencies.
 
 ## Purpose
 The main goal of this dashboard is to help you:
@@ -23,36 +23,49 @@ The main goal of this dashboard is to help you:
 
 ## Visualizations & Summaries
 
-### 1. Weight Over Time (`weight_over_time.png`)
+### 1. Weight Over Time
+![Weight Over Time](visualizations/weight_over_time.png)
 - **Summary:** This chart shows how my weight has changed over time, so I can see how my eating habits and nutrition affect my progress.
 - **Insights:** I notice that my weight fluctuates, especially during periods when I eat more calories or change my macro balance. If my weight trends up or down outside my goals, I review my food choices for those days. When my weight is stable and healthy, I know I'm managing my diet well.
 
-### 2. Daily Calorie Intake (`daily_calories.png`)
+### 2. Daily Calorie Intake
+![Daily Calorie Intake](visualizations/daily_calories.png)
 - **Summary:** This chart helps me track how many calories I eat each day, so I can spot trends, spikes, or days when I might be undereating.
 - **Insights:** I see spikes in my calorie intake around weekends or social events, and sometimes after workouts. When my calories are consistent and close to my goal, I feel best. If I notice long stretches of low calories, I check for signs of low energy. Too many high-calorie days can lead to weight gain, so I keep an eye on those.
 
-### 3. Daily Macros (`daily_macros.png`)
+### 3. Daily Macros
+![Daily Macros](visualizations/daily_macros.png)
 - **Summary:** I use this chart to see how much protein, carbs, and fat I eat each day, and to make sure my macros are balanced for my goals.
 - **Insights:** Most days, my macros look balanced, but I see spikes in protein after workouts and in carbs after big meals or social events. If I notice my fat intake is high for several days, I try to adjust my food choices. I aim for enough protein to support my activity level.
 
 ### 4. Daily Nutrients
-- **Files:**
-  - `daily_cholesterol_mg.png`
-  - `daily_sodium_mg.png`
-  - `daily_sugar_grams.png`
-  - `daily_fiber_grams.png`
-- **Summary:** These charts let me track specific nutrients over time, so I can see if I'm getting enough or too much of things like sodium, sugar, fiber, and cholesterol.
-- **Insights:**
-  - **Cholesterol:** Most days I'm under the recommended 300mg, but I see spikes when I eat eggs or shellfish. If I had heart concerns, I'd watch this more closely.
-  - **Sodium:** I often go over the 2300mg limit, especially after eating processed foods or restaurant meals. I know I should cut back to help my blood pressure.
-  - **Sugar:** My sugar intake is usually moderate, but it jumps after desserts or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
-  - **Fiber:** Some days I don't hit the 25g target, so I try to eat more whole grains, fruits, and veggies. More fiber helps my digestion and keeps me full.
+#### Cholesterol
+![Daily Cholesterol](visualizations/daily_cholesterol_mg.png)
+- **Summary:** This chart lets me track my cholesterol intake over time.
+- **Insights:** Most days I'm under the recommended 300mg, but I see spikes when I eat eggs or shellfish. If I had heart concerns, I'd watch this more closely.
 
-### 5. Top Foods (`top_foods.png`)
+#### Sodium
+![Daily Sodium](visualizations/daily_sodium_mg.png)
+- **Summary:** This chart lets me see how much sodium I eat each day.
+- **Insights:** I often go over the 2300mg limit, especially after eating processed foods or restaurant meals. I know I should cut back to help my blood pressure.
+
+#### Sugar
+![Daily Sugar](visualizations/daily_sugar_grams.png)
+- **Summary:** This chart helps me monitor my sugar intake.
+- **Insights:** My sugar intake is usually moderate, but it jumps after desserts or lots of fruit. If I see too many high-sugar days, I try to cut back for my health.
+
+#### Fiber
+![Daily Fiber](visualizations/daily_fiber_grams.png)
+- **Summary:** This chart tracks my fiber intake.
+- **Insights:** Some days I don't hit the 25g target, so I try to eat more whole grains, fruits, and veggies. More fiber helps my digestion and keeps me full.
+
+### 5. Top Foods
+![Top Foods](visualizations/top_foods.png)
 - **Summary:** This chart shows the foods I eat most often, and how much of each I actually consume.
 - **Insights:** I see that lean proteins like chicken breast and protein powder, and staple carbs like rice and lentils, are my top foods. If I notice processed foods or sweets in the top 10, I try to eat them less often for better health.
 
-### 6. Top Foods by Grams (`top_foods_by_grams.png`)
+### 6. Top Foods by Grams
+![Top Foods by Grams](visualizations/top_foods_by_grams.png)
 - **Summary:** This chart highlights the foods I eat the most by total weight, which sometimes tells a different story than just frequency.
 - **Insights:** Foods like rice, lentils, and milk make up a big part of my diet. If I see that I'm eating a lot of one food, I check its nutrition to make sure it's helping me reach my goals. Lots of fruits and veggies is good, but if processed foods are high, I try to cut back.
 
